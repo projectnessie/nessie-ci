@@ -1,0 +1,152 @@
+simulation0:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.ManyUniqueTablesSimulation
+  namme: manyuniquetablessimulation
+  start: 2022-03-08 17:17:46
+  duration: 2.2
+  throughput: 0.0
+  averageMs: 6.3
+  count: 6
+  successCount: 0
+  errorCount: 6
+  maxUser: 2
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 0
+  max: 23
+  p50: 0
+  p95: 23
+  p99: 23
+  avg: 6.333333333333333
+
+  # Request mapping
+    Nessie-Create Table-1:
+    name: Nessie-Create Table-1
+    scenario: 
+    averageMs: 4.7
+    stddev: 8
+    rps: 0.0
+    count: 3
+    successCount: 0
+    errorCount: 3
+    maxUser: 2
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 0
+    max: 14
+    p50: 0
+    p95: 14
+    p99: 14
+    avg: 4.666666666666667
+    Nessie-Get Branch-2:
+    name: Nessie-Get Branch-2
+    scenario: 
+    averageMs: 8.0
+    stddev: 13
+    rps: 0.0
+    count: 3
+    successCount: 0
+    errorCount: 3
+    maxUser: 2
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 0
+    max: 23
+    p50: 1
+    p95: 23
+    p99: 23
+    avg: 8.0
+simulation1:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CreateManyBranchesSimulation
+  namme: createmanybranchessimulation
+  start: 2022-03-08 17:17:40
+  duration: 0.4
+  throughput: 0.0
+  averageMs: 0.2
+  count: 1000
+  successCount: 0
+  errorCount: 1000
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 0
+  max: 65
+  p50: 0
+  p95: 0
+  p99: 1
+  avg: 0.229
+
+  # Request mapping
+    Nessie-Create branch-2:
+    name: Nessie-Create branch-2
+    scenario: 
+    averageMs: 0.2
+    stddev: 3
+    rps: 0.0
+    count: 1000
+    successCount: 0
+    errorCount: 1000
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 0
+    max: 65
+    p50: 0
+    p95: 0
+    p99: 1
+    avg: 0.229
+simulation2:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CommitToBranchSimulation
+  namme: committobranchsimulation
+  start: 2022-03-08 17:17:34
+  duration: 0.3
+  throughput: 0.0
+  averageMs: 0.1
+  count: 1000
+  successCount: 0
+  errorCount: 1000
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 0
+  max: 20
+  p50: 0
+  p95: 0
+  p99: 1
+  avg: 0.102
+
+  # Request mapping
+    Nessie-Commit-2:
+    name: Nessie-Commit-2
+    scenario: 
+    averageMs: 0.1
+    stddev: 1
+    rps: 0.0
+    count: 1000
+    successCount: 0
+    errorCount: 1000
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 0
+    max: 20
+    p50: 0
+    p95: 0
+    p99: 1
+    avg: 0.102
