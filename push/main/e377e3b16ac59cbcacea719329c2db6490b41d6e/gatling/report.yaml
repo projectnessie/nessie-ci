@@ -1,0 +1,50 @@
+# TODO
+simulation20:
+  type: trend
+# TODO
+simulation40:
+  type: trend
+simulation41:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CommitToBranchSimulationSameTable
+  namme: committobranchsimulationsametable
+  start: 2022-03-17 09:28:13
+  duration: 0.4
+  throughput: 0.0
+  averageMs: 0.2
+  count: 1000
+  successCount: 0
+  errorCount: 1000
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 0
+  max: 41
+  p50: 0
+  p95: 0
+  p99: 10
+  avg: 0.237
+
+  # Request mapping
+    Nessie-Commit-2:
+    name: Nessie-Commit-2
+    scenario: 
+    averageMs: 0.2
+    stddev: 2
+    rps: 0.0
+    count: 1000
+    successCount: 0
+    errorCount: 1000
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 0
+    max: 41
+    p50: 0
+    p95: 0
+    p99: 10
+    avg: 0.237
