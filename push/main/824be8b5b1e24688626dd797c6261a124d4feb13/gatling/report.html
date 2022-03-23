@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style media="screen" type="text/css">
+    th {text-align:left}
+    td {text-align:right}
+    td.win {background-color: chartreuse;}
+    td.loose {background-color: darksalmon;}
+    .responseAllDiv {float: left}
+    .countDiv {float: left}
+    .responseDiv {clear:both}
+    .simDiv {clear:both}
+    .image {float: left}
+
+  </style>
+  <script>
+  function clone(obj) {
+      if(obj == null || typeof(obj) != 'object')
+          return obj;
+      var temp = new obj.constructor();
+      for(var key in obj)
+          temp[key] = clone(obj[key]);
+      return temp;
+  }
+  </script>
+</head>
+
+<ul>
+<li><a href="#sim-$16">Nessie-Commit-2</a></li>
+<li><a href="#sim-$33">Nessie-Create branch-2</a></li>
+<li><a href="#sim-$50">Nessie-Commit-2</a></li>
+</ul>
+<div class="simDiv">
+<a name="sim-16"/>
+<h1>committobranchsimulationdifferenttables Trend report</h1>
+
+<div id="totalDiv" class="totalDiv"></div>
+  <div id="div16_32"></div>
+
+<script>
+
+var data16 = [{
+  type: 'scatter',
+  mode: 'lines',
+  x: ['2022-03-22 07:43:47', '2022-03-22 07:49:29', '2022-03-22 08:37:37', '2022-03-22 09:43:24', '2022-03-22 09:43:51', '2022-03-22 09:44:09', '2022-03-22 09:45:23', '2022-03-22 09:53:59', '2022-03-22 09:56:22', '2022-03-23 07:09:50', '2022-03-23 07:09:58', '2022-03-23 07:12:29', '2022-03-23 07:15:33', '2022-03-23 09:24:00', '2022-03-23 10:01:51', '2022-03-23 11:57:20'],
+  y: [],
+  line: {
+    width: 2
+  },
+  error_y: {
+    array: [],
+    thickness: 0.5,
+    width: 0
+  },
+  name: 'Response time'
+  },
+  {
+    type: 'scatter',
+    mode: 'lines',
+    x: ['2022-03-22 07:43:47', '2022-03-22 07:49:29', '2022-03-22 08:37:37', '2022-03-22 09:43:24', '2022-03-22 09:43:51', '2022-03-22 09:44:09', '2022-03-22 09:45:23', '2022-03-22 09:53:59', '2022-03-22 09:56:22', '2022-03-23 07:09:50', '2022-03-23 07:09:58', '2022-03-23 07:12:29', '2022-03-23 07:15:33', '2022-03-23 09:24:00', '2022-03-23 10:01:51', '2022-03-23 11:57:20'],
+    y: [],
+    yaxis: 'y2',
+    name: 'Requests/s'
+  }
+];
+
+var layout16 = {
+  title: "",
+  xaxis: {
+    title: "Date"
+  },
+  yaxis: {
+    title: "Time in ms",
+    rangemode: "nonnegative"
+  },
+  yaxis2: {
+    title: 'Requests per second',
+    overlaying: 'y',
+    side: 'right',
+    rangemode:"tozero"
+  }
+};
+
+var layoutAll16 = clone(layout16);
+layoutAll16["title"] = "committobranchsimulationdifferenttables - Response time (avg + stddev)";
+var dataAll16 = clone(data16);
+dataAll16[0]["y"] = [0.219, 0.191, 0.137, 0.191, 0.242, 0.211, 0.167, 0.238, 0.132, 0.128, 0.163, 0.256, 0.296, 0.196, 0.16, 0.21];
+dataAll16[0]["error_y"]["array"] = [2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 2, 2, 1, 1, 1];
+dataAll16[1]["y"] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+
+Plotly.plot('totalDiv', dataAll16, layoutAll16, {showLink: false});
+
+var layout16_32 = clone(layout16);
+layout16_32["title"] = "Nessie-Commit-2 - Response time (avg + stddev)";
+var data16_32 = clone(data16);
+data16_32[0]["y"] = [0.219, 0.191, 0.137, 0.191, 0.242, 0.211, 0.167, 0.238, 0.132, 0.128, 0.163, 0.256, 0.296, 0.196, 0.16, 0.21];
+data16_32[0]["error_y"]["array"] = [2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 2, 2, 1, 1, 1];
+data16_32[1]["y"] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+Plotly.plot('div16_32', data16_32, layout16_32, {showLink: false});
+
+
+
+</script>
+
+</div>
+<div class="simDiv">
+<a name="sim-33"/>
+<h1>createmanybranchessimulation Trend report</h1>
+
+<div id="totalDiv" class="totalDiv"></div>
+  <div id="div33_96"></div>
+
+<script>
+
+var data33 = [{
+  type: 'scatter',
+  mode: 'lines',
+  x: ['2022-03-22 07:43:59', '2022-03-22 07:49:44', '2022-03-22 08:37:48', '2022-03-22 09:43:35', '2022-03-22 09:44:03', '2022-03-22 09:44:22', '2022-03-22 09:45:36', '2022-03-22 09:54:13', '2022-03-22 09:56:34', '2022-03-23 07:10:02', '2022-03-23 07:10:09', '2022-03-23 07:12:43', '2022-03-23 07:15:47', '2022-03-23 09:24:13', '2022-03-23 10:02:05', '2022-03-23 11:57:35'],
+  y: [],
+  line: {
+    width: 2
+  },
+  error_y: {
+    array: [],
+    thickness: 0.5,
+    width: 0
+  },
+  name: 'Response time'
+  },
+  {
+    type: 'scatter',
+    mode: 'lines',
+    x: ['2022-03-22 07:43:59', '2022-03-22 07:49:44', '2022-03-22 08:37:48', '2022-03-22 09:43:35', '2022-03-22 09:44:03', '2022-03-22 09:44:22', '2022-03-22 09:45:36', '2022-03-22 09:54:13', '2022-03-22 09:56:34', '2022-03-23 07:10:02', '2022-03-23 07:10:09', '2022-03-23 07:12:43', '2022-03-23 07:15:47', '2022-03-23 09:24:13', '2022-03-23 10:02:05', '2022-03-23 11:57:35'],
+    y: [],
+    yaxis: 'y2',
+    name: 'Requests/s'
+  }
+];
+
+var layout33 = {
+  title: "",
+  xaxis: {
+    title: "Date"
+  },
+  yaxis: {
+    title: "Time in ms",
+    rangemode: "nonnegative"
+  },
+  yaxis2: {
+    title: 'Requests per second',
+    overlaying: 'y',
+    side: 'right',
+    rangemode:"tozero"
+  }
+};
+
+var layoutAll33 = clone(layout33);
+layoutAll33["title"] = "createmanybranchessimulation - Response time (avg + stddev)";
+var dataAll33 = clone(data33);
+dataAll33[0]["y"] = [0.168, 0.2, 0.173, 0.05, 0.159, 0.145, 0.174, 0.201, 0.168, 0.149, 0.149, 0.169, 0.194, 0.177, 0.097, 0.118];
+dataAll33[0]["error_y"]["array"] = [1, 2, 1, 0, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 0, 1];
+dataAll33[1]["y"] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+
+Plotly.plot('totalDiv', dataAll33, layoutAll33, {showLink: false});
+
+var layout33_96 = clone(layout33);
+layout33_96["title"] = "Nessie-Create branch-2 - Response time (avg + stddev)";
+var data33_96 = clone(data33);
+data33_96[0]["y"] = [0.168, 0.2, 0.173, 0.05, 0.159, 0.145, 0.174, 0.201, 0.168, 0.149, 0.149, 0.169, 0.194, 0.177, 0.097, 0.118];
+data33_96[0]["error_y"]["array"] = [1, 2, 1, 0, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 0, 1];
+data33_96[1]["y"] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+Plotly.plot('div33_96', data33_96, layout33_96, {showLink: false});
+
+
+
+</script>
+
+</div>
+<div class="simDiv">
+<a name="sim-50"/>
+<h1>committobranchsimulationsametable Trend report</h1>
+
+<div id="totalDiv" class="totalDiv"></div>
+  <div id="div50_64"></div>
+
+<script>
+
+var data50 = [{
+  type: 'scatter',
+  mode: 'lines',
+  x: ['2022-03-22 07:43:53', '2022-03-22 07:49:36', '2022-03-22 08:37:43', '2022-03-22 09:43:29', '2022-03-22 09:43:57', '2022-03-22 09:44:15', '2022-03-22 09:45:29', '2022-03-22 09:54:06', '2022-03-22 09:56:28', '2022-03-23 07:09:56', '2022-03-23 07:10:04', '2022-03-23 07:12:36', '2022-03-23 07:15:40', '2022-03-23 09:24:06', '2022-03-23 10:01:58', '2022-03-23 11:57:27'],
+  y: [],
+  line: {
+    width: 2
+  },
+  error_y: {
+    array: [],
+    thickness: 0.5,
+    width: 0
+  },
+  name: 'Response time'
+  },
+  {
+    type: 'scatter',
+    mode: 'lines',
+    x: ['2022-03-22 07:43:53', '2022-03-22 07:49:36', '2022-03-22 08:37:43', '2022-03-22 09:43:29', '2022-03-22 09:43:57', '2022-03-22 09:44:15', '2022-03-22 09:45:29', '2022-03-22 09:54:06', '2022-03-22 09:56:28', '2022-03-23 07:09:56', '2022-03-23 07:10:04', '2022-03-23 07:12:36', '2022-03-23 07:15:40', '2022-03-23 09:24:06', '2022-03-23 10:01:58', '2022-03-23 11:57:27'],
+    y: [],
+    yaxis: 'y2',
+    name: 'Requests/s'
+  }
+];
+
+var layout50 = {
+  title: "",
+  xaxis: {
+    title: "Date"
+  },
+  yaxis: {
+    title: "Time in ms",
+    rangemode: "nonnegative"
+  },
+  yaxis2: {
+    title: 'Requests per second',
+    overlaying: 'y',
+    side: 'right',
+    rangemode:"tozero"
+  }
+};
+
+var layoutAll50 = clone(layout50);
+layoutAll50["title"] = "committobranchsimulationsametable - Response time (avg + stddev)";
+var dataAll50 = clone(data50);
+dataAll50[0]["y"] = [0.173, 0.138, 0.15, 0.101, 0.244, 0.13, 0.184, 0.182, 0.132, 0.135, 0.103, 0.209, 0.311, 0.229, 0.189, 0.17];
+dataAll50[0]["error_y"]["array"] = [2, 1, 1, 0, 2, 1, 1, 1, 1, 1, 1, 1, 3, 2, 1, 1];
+dataAll50[1]["y"] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+
+Plotly.plot('totalDiv', dataAll50, layoutAll50, {showLink: false});
+
+var layout50_64 = clone(layout50);
+layout50_64["title"] = "Nessie-Commit-2 - Response time (avg + stddev)";
+var data50_64 = clone(data50);
+data50_64[0]["y"] = [0.173, 0.138, 0.15, 0.101, 0.244, 0.13, 0.184, 0.182, 0.132, 0.135, 0.103, 0.209, 0.311, 0.229, 0.189, 0.17];
+data50_64[0]["error_y"]["array"] = [2, 1, 1, 0, 2, 1, 1, 1, 1, 1, 1, 1, 3, 2, 1, 1];
+data50_64[1]["y"] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+Plotly.plot('div50_64', data50_64, layout50_64, {showLink: false});
+
+
+
+</script>
+
+</div>
