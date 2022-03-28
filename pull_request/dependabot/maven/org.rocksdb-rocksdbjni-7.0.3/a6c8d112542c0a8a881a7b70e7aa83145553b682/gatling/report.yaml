@@ -1,0 +1,132 @@
+simulation0:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CommitToBranchSimulationDifferentTables
+  namme: committobranchsimulationdifferenttables
+  start: 2022-03-28 06:51:27
+  duration: 11.8
+  throughput: 85.0
+  averageMs: 36.1
+  count: 1000
+  successCount: 1000
+  errorCount: 0
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 5
+  max: 535
+  p50: 27
+  p95: 86
+  p99: 124
+  avg: 36.099
+
+  # Request mapping
+    Nessie-Commit-2:
+    name: Nessie-Commit-2
+    scenario: 
+    averageMs: 36.1
+    stddev: 40
+    rps: 85.00510030601836
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 5
+    max: 535
+    p50: 27
+    p95: 86
+    p99: 124
+    avg: 36.099
+simulation1:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CreateManyBranchesSimulation
+  namme: createmanybranchessimulation
+  start: 2022-03-28 06:52:02
+  duration: 3.3
+  throughput: 304.6
+  averageMs: 7.8
+  count: 1000
+  successCount: 1000
+  errorCount: 0
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 1
+  max: 114
+  p50: 6
+  p95: 19
+  p99: 34
+  avg: 7.79
+
+  # Request mapping
+    Nessie-Create branch-2:
+    name: Nessie-Create branch-2
+    scenario: 
+    averageMs: 7.8
+    stddev: 7
+    rps: 304.5994517209869
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 114
+    p50: 6
+    p95: 19
+    p99: 34
+    avg: 7.79
+simulation2:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CommitToBranchSimulationSameTable
+  namme: committobranchsimulationsametable
+  start: 2022-03-28 06:51:47
+  duration: 7.1
+  throughput: 141.5
+  averageMs: 22.0
+  count: 1000
+  successCount: 999
+  errorCount: 1
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 3
+  max: 814
+  p50: 15
+  p95: 58
+  p99: 108
+  avg: 21.979
+
+  # Request mapping
+    Nessie-Commit-2:
+    name: Nessie-Commit-2
+    scenario: 
+    averageMs: 22.0
+    stddev: 32
+    rps: 141.46134239592183
+    count: 1000
+    successCount: 999
+    errorCount: 1
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 3
+    max: 814
+    p50: 15
+    p95: 58
+    p99: 108
+    avg: 21.979
