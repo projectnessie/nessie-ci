@@ -1,0 +1,108 @@
+simulation0:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CreateManyBranchesSimulation
+  namme: createmanybranchessimulation
+  start: 2022-07-12 06:24:14
+  duration: 2.6
+  throughput: 387.3
+  averageMs: 7.4
+  count: 1000
+  successCount: 1000
+  errorCount: 0
+  maxUser: 20
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 1
+  max: 103
+  p50: 6
+  p95: 17
+  p99: 30
+  avg: 7.435
+
+  # Request mapping
+    Nessie-Create branch-2:
+    name: Nessie-Create branch-2
+    scenario: 
+    averageMs: 7.4
+    stddev: 7
+    rps: 387.2966692486445
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 20
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 103
+    p50: 6
+    p95: 17
+    p99: 30
+    avg: 7.435
+simulation1:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CommitToBranchSimulation
+  namme: committobranchsimulation
+  start: 2022-07-12 06:24:04
+  duration: 6.2
+  throughput: 324.4
+  averageMs: 9.4
+  count: 2000
+  successCount: 2000
+  errorCount: 0
+  maxUser: 20
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 1
+  max: 146
+  p50: 7
+  p95: 23
+  p99: 37
+  avg: 9.406
+
+  # Request mapping
+    Nessie-FetchContent-3:
+    name: Nessie-FetchContent-3
+    scenario: 
+    averageMs: 8.9
+    stddev: 9
+    rps: 162.17969510217318
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 20
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 112
+    p50: 7
+    p95: 22
+    p99: 37
+    avg: 8.891
+    Nessie-Commit-2:
+    name: Nessie-Commit-2
+    scenario: 
+    averageMs: 9.9
+    stddev: 11
+    rps: 162.17969510217318
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 20
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 2
+    max: 146
+    p50: 7
+    p95: 24
+    p99: 37
+    avg: 9.921
