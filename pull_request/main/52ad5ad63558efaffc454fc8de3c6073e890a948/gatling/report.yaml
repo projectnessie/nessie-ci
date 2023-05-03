@@ -1,0 +1,396 @@
+simulation0:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CreateManyBranchesSimulation
+  namme: createmanybranchessimulation
+  start: 2023-05-03 18:37:17
+  duration: 4.1
+  throughput: 242.0
+  averageMs: 11.5
+  count: 1000
+  successCount: 1000
+  errorCount: 0
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 2
+  max: 96
+  p50: 6
+  p95: 39
+  p99: 66
+  avg: 11.531
+
+  # Request mapping
+    Nessie-Create branch-2:
+    name: Nessie-Create branch-2
+    scenario: 
+    averageMs: 11.5
+    stddev: 13
+    rps: 242.01355275895452
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 2
+    max: 96
+    p50: 6
+    p95: 39
+    p99: 66
+    avg: 11.531
+simulation1:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.CommitToBranchSimulation
+  namme: committobranchsimulation
+  start: 2023-05-03 18:37:06
+  duration: 5.5
+  throughput: 363.2
+  averageMs: 8.4
+  count: 2000
+  successCount: 2000
+  errorCount: 0
+  maxUser: 10
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 1
+  max: 147
+  p50: 6
+  p95: 19
+  p99: 31
+  avg: 8.396
+
+  # Request mapping
+    Nessie-FetchContent-3:
+    name: Nessie-FetchContent-3
+    scenario: 
+    averageMs: 8.4
+    stddev: 10
+    rps: 181.62005085361423
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 147
+    p50: 6
+    p95: 19
+    p99: 42
+    avg: 8.378
+    Nessie-Commit-2:
+    name: Nessie-Commit-2
+    scenario: 
+    averageMs: 8.4
+    stddev: 7
+    rps: 181.62005085361423
+    count: 1000
+    successCount: 1000
+    errorCount: 0
+    maxUser: 10
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 97
+    p50: 7
+    p95: 19
+    p99: 30
+    avg: 8.414
+simulation2:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.MixedWorkloadsSimulation
+  namme: mixedworkloadssimulation
+  start: 2023-05-03 18:35:32
+  duration: 20.1
+  throughput: 58.7
+  averageMs: 9.1
+  count: 1179
+  successCount: 1179
+  errorCount: 0
+  maxUser: 4
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 1
+  max: 1077
+  p50: 5
+  p95: 20
+  p99: 43
+  avg: 9.13740458015267
+
+  # Request mapping
+    Nessie-ui-users - Update table / get content-34:
+    name: Nessie-ui-users - Update table / get content-34
+    scenario: 
+    averageMs: 5.6
+    stddev: 3
+    rps: 10.360629607491532
+    count: 208
+    successCount: 208
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 2
+    max: 23
+    p50: 4
+    p95: 13
+    p99: 20
+    avg: 5.586538461538462
+    Nessie-writers - Update table / get content-15:
+    name: Nessie-writers - Update table / get content-15
+    scenario: 
+    averageMs: 5.8
+    stddev: 9
+    rps: 10.061765291890815
+    count: 202
+    successCount: 202
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 129
+    p50: 4
+    p95: 12
+    p99: 25
+    avg: 5.816831683168317
+    Nessie-readers - Read 1 table(s)-25:
+    name: Nessie-readers - Read 1 table(s)-25
+    scenario: 
+    averageMs: 7.8
+    stddev: 13
+    rps: 8.866308029487946
+    count: 178
+    successCount: 178
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 2
+    max: 176
+    p50: 5
+    p95: 22
+    p99: 66
+    avg: 7.786516853932584
+    Nessie-ui-users - Get all entries-37:
+    name: Nessie-ui-users - Get all entries-37
+    scenario: 
+    averageMs: 8.1
+    stddev: 14
+    rps: 8.866308029487946
+    count: 178
+    successCount: 178
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 2
+    max: 192
+    p50: 5
+    p95: 22
+    p99: 76
+    avg: 8.0561797752809
+    Nessie-ui-users - Update table / commit-33:
+    name: Nessie-ui-users - Update table / commit-33
+    scenario: 
+    averageMs: 10.1
+    stddev: 7
+    rps: 10.360629607491532
+    count: 208
+    successCount: 208
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 3
+    max: 46
+    p50: 7
+    p95: 27
+    p99: 42
+    avg: 10.100961538461538
+    Nessie-writers - Update table / commit-14:
+    name: Nessie-writers - Update table / commit-14
+    scenario: 
+    averageMs: 10.1
+    stddev: 17
+    rps: 10.061765291890815
+    count: 202
+    successCount: 202
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 3
+    max: 226
+    p50: 6
+    p95: 24
+    p99: 90
+    avg: 10.148514851485148
+    Nessie-prepare - Create additional branch-3:
+    name: Nessie-prepare - Create additional branch-3
+    scenario: 
+    averageMs: 41.0
+    stddev: 0
+    rps: 0.049810719266786214
+    count: 1
+    successCount: 1
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 41
+    max: 41
+    p50: 41
+    p95: 41
+    p99: 41
+    avg: 41.0
+    Nessie-prepare - Create tables ...-6:
+    name: Nessie-prepare - Create tables ...-6
+    scenario: 
+    averageMs: 347.0
+    stddev: 0
+    rps: 0.049810719266786214
+    count: 1
+    successCount: 1
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 347
+    max: 347
+    p50: 347
+    p95: 347
+    p99: 347
+    avg: 347.0
+    Nessie-prepare - Create initial branch-8:
+    name: Nessie-prepare - Create initial branch-8
+    scenario: 
+    averageMs: 1077.0
+    stddev: 0
+    rps: 0.049810719266786214
+    count: 1
+    successCount: 1
+    errorCount: 0
+    maxUser: 4
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1077
+    max: 1077
+    p50: 1077
+    p95: 1077
+    p99: 1077
+    avg: 1077.0
+simulation3:
+  type: simulation
+  simulation: org.projectnessie.perftest.gatling.KeyListSpillingSimulation
+  namme: keylistspillingsimulation
+  start: 2023-05-03 18:36:00
+  duration: 60.1
+  throughput: 242.3
+  averageMs: 4.1
+  count: 14566
+  successCount: 14566
+  errorCount: 0
+  maxUser: 1
+  apdex:
+  t: 1.5
+  rating: Excellent
+  score: 1.0
+  min: 1
+  max: 85
+  p50: 4
+  p95: 8
+  p99: 13
+  avg: 4.078401757517507
+
+  # Request mapping
+    Nessie-DeleteTestBranchIfExists-4:
+    name: Nessie-DeleteTestBranchIfExists-4
+    scenario: 
+    averageMs: 2.8
+    stddev: 1
+    rps: 5.77332623452682
+    count: 347
+    successCount: 347
+    errorCount: 0
+    maxUser: 1
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 14
+    p50: 2
+    p95: 6
+    p99: 10
+    avg: 2.8011527377521612
+    Nessie-TestBranchCommit-2:
+    name: Nessie-TestBranchCommit-2
+    scenario: 
+    averageMs: 4.1
+    stddev: 2
+    rps: 230.79994675895117
+    count: 13872
+    successCount: 13872
+    errorCount: 0
+    maxUser: 1
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 1
+    max: 85
+    p50: 4
+    p95: 8
+    p99: 13
+    avg: 4.088019031141869
+    Nessie-CreateTestBranch-3:
+    name: Nessie-CreateTestBranch-3
+    scenario: 
+    averageMs: 5.0
+    stddev: 2
+    rps: 5.77332623452682
+    count: 347
+    successCount: 347
+    errorCount: 0
+    maxUser: 1
+    apdex:
+    t: 1.5
+    rating: Excellent
+    score: 1.0
+    min: 2
+    max: 19
+    p50: 4
+    p95: 10
+    p99: 15
+    avg: 4.971181556195965
